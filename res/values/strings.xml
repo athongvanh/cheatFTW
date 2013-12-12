@@ -2,10 +2,8 @@
 <resources>
 
     <string name="app_name">Cheat FTW</string>
-    <string name="action_settings">Settings</string>
-    <string name="new_game">New</string>
-    <string name="save">Save</string>
-    <string name="load">Load</string>
+    <string name="new">New Board</string>
+    <string name="pref">Settings</string>
     <string name="delete">Delete Tile</string>
     <string name="rtext">Remaining: </string>
     <string name="vtext">Value: </string>
@@ -36,36 +34,7 @@
     <string name="B_y">Y</string>
     <string name="B_z">Z</string>
     <string name="B_blank">BLANK</string>
-    <string-array name="tiledraws">
-        <item>R.drawable.a</item>
-        <item>R.drawable.b</item>
-        <item>R.drawable.c</item>
-        <item>R.drawable.d</item>
-        <item>R.drawable.e</item>
-        <item>R.drawable.f</item>
-        <item>R.drawable.g</item>
-        <item>R.drawable.h</item>
-        <item>R.drawable.i</item>
-        <item>R.drawable.j</item>
-        <item>R.drawable.k</item>
-        <item>R.drawable.l</item>
-        <item>R.drawable.m</item>
-        <item>R.drawable.n</item>
-        <item>R.drawable.o</item>
-        <item>R.drawable.p</item>
-        <item>R.drawable.q</item>
-        <item>R.drawable.r</item>
-        <item>R.drawable.s</item>
-        <item>R.drawable.t</item>
-        <item>R.drawable.u</item>
-        <item>R.drawable.v</item>
-        <item>R.drawable.w</item>
-        <item>R.drawable.x</item>
-        <item>R.drawable.y</item>
-        <item>R.drawable.z</item>
-        <item>R.drawable.tile</item>
-        
-    </string-array>
+
     
 
 </resources>

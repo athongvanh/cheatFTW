@@ -2,19 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <item android:id="@+id/action_new"
         android:showAsAction="ifRoom" 
-        android:title="@string/new_game" 
+        android:title="@string/new" 
         android:icon="@drawable/ic_action_new" 
         android:orderInCategory="100"></item>
-    <item android:id="@+id/action_load" 
+    <item android:id="@+id/action_pref" 
         android:showAsAction="ifRoom" 
-        android:title="@string/load" 
+        android:title="@string/pref" 
         android:orderInCategory="100" 
-        android:icon="@drawable/ic_action_load"></item>
-    <item android:id="@+id/action_save" 
-        android:showAsAction="ifRoom" 
-        android:title="@string/save" 
-        android:orderInCategory="100" 
-        android:icon="@drawable/ic_action_save"></item>
+        android:icon="@drawable/ic_action_pref"></item>
+
     
 
 </menu>

@@ -24,6 +24,7 @@ public class CheatFTWActivity extends Activity {
 	public TextView vtext;
 	Button delete;
 	public String banktileselected;
+	public boolean boardselected;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +36,14 @@ public class CheatFTWActivity extends Activity {
 		delete = (Button) findViewById(R.id.bdelete);
 		rtext = (TextView) findViewById(R.id.rtext);
 		vtext = (TextView) findViewById(R.id.vtext);
-		delete.setVisibility(View.INVISIBLE);
-		rtext.setVisibility(View.INVISIBLE);
-		vtext.setVisibility(View.INVISIBLE);
-		board = (GridLayout)findViewById(R.id.board);
-		boardinit(board);
-		
+		if(savedInstanceState==null){
+			delete.setVisibility(View.INVISIBLE);
+			rtext.setVisibility(View.INVISIBLE);
+			vtext.setVisibility(View.INVISIBLE);
+			board = (GridLayout)findViewById(R.id.board);
+			boardinit(board);
+			boardselected=false;
+		}
 		
 	}
 	
@@ -112,35 +115,35 @@ public class CheatFTWActivity extends Activity {
 		for(int i=0;i<225;i++){
 			ImageView empty = new ImageView(getApplicationContext());
 			empty.setBackground(getResources().getDrawable(R.drawable.empty));
-			empty.setTag("empty");
+			empty.setTag("empty"); //create new class with position and string
 			empty.setClickable(true);
-			empty.setId(i);
+			empty.setId(i); //change to R.id.
 			empty.setOnClickListener(new View.OnClickListener() {
 				
 				@Override
 				public void onClick(View v) {
 					if(!(v.getTag().equals(null))){
-					if(v.getTag().equals("empty")&&!(banktileselected==null)){
-						delete.setVisibility(View.INVISIBLE);
-						int remaining = Bank.get(banktileselected);
-						rtext.setVisibility(View.VISIBLE);
-						vtext.setVisibility(View.VISIBLE);
-						if(remaining!=0){
-								v.setTag(banktileselected);
-								v.setBackground(getResources().getDrawable(letterid(banktileselected)));
-								remaining--;
-								Bank.put(banktileselected, remaining);
-								rtext.setText("Remaining: "+remaining);
-								
+						if(v.getTag().equals("empty")&&!(banktileselected==null)){
+							delete.setVisibility(View.INVISIBLE);
+							int remaining = Bank.get(banktileselected);
+							rtext.setVisibility(View.VISIBLE);
+							vtext.setVisibility(View.VISIBLE);
+							if(remaining!=0){
+									v.setTag(banktileselected);
+									v.setBackground(getResources().getDrawable(letterid(banktileselected)));
+									remaining--;
+									Bank.put(banktileselected, remaining);
+									rtext.setText("Remaining: "+remaining);
+									
+							}
+						}else if(!v.getTag().equals("empty")){
+							rtext.setVisibility(View.INVISIBLE);
+							vtext.setVisibility(View.INVISIBLE);
+							banktileselected=null;
+							BankDeselect();
+							DeleteTile(v.getId());
 						}
-					}else if(!v.getTag().equals("empty")){
-						rtext.setVisibility(View.INVISIBLE);
-						vtext.setVisibility(View.INVISIBLE);
-						banktileselected=null;
-						BankDeselect();
-						DeleteTile(v.getId());
 					}
-				}
 				}
 			});
 			v.addView(empty, i);
@@ -202,7 +205,7 @@ public class CheatFTWActivity extends Activity {
 	
 	public void DeleteTile(int position){
 		delete.setVisibility(View.VISIBLE);
-		final ImageView cur = (ImageView) board.getChildAt(position);;
+		final ImageView cur = (ImageView) board.getChildAt(position);
 		ImageView v;
 		for(int i =0; i<225; i++){
 			v = (ImageView) board.getChildAt(i);
@@ -215,13 +218,16 @@ public class CheatFTWActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
+				if(boardselected){
 				int rem = Bank.get(cur.getTag().toString());
 				rem++;
 				Bank.put(cur.getTag().toString(), rem);
 				cur.setBackground(getResources().getDrawable(R.drawable.empty));
 				cur.setTag("empty");
 				cur.setImageResource(R.drawable.empty);
-				
+				boardselected=false;
+				delete.setVisibility(View.INVISIBLE);
+				}
 				
 			}
 		});
@@ -240,25 +246,18 @@ public class CheatFTWActivity extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item){
 		switch(item.getItemId()) {
-		case R.id.action_new:
+		case R.id.action_new: //create new board and reset bank
 			newGame();
 			break;
-		case R.id.action_load:
+		case R.id.action_pref: //preferences for dictionary and backgrounds
 			loadGame();
 			break;
-		case R.id.action_save:
-			saveGame();
 			
 		default:
 		break;
 		}
 		
 		return true;
-	}
-
-	private void saveGame() {
-		Toast.makeText(this, "Save Game selected", Toast.LENGTH_SHORT).show();
-		
 	}
 
 	private void loadGame() {
