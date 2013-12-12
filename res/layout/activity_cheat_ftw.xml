@@ -5,5 +5,305 @@
     android:background="@drawable/scrabble_background"
     android:gravity="fill_vertical"
     tools:context=".CheatFTWActivity" >
-    
+
+    <HorizontalScrollView
+        android:id="@+id/bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/board"
+        android:background="@drawable/whiteback"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/tilebank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_a"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/a" />
+
+            <ImageView
+                android:id="@+id/B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_b"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/b" />
+
+            <ImageView
+                android:id="@+id/C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_c"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/c" />
+
+            <ImageView
+                android:id="@+id/D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_d"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/d" />
+
+            <ImageView
+                android:id="@+id/E"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_e"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/e" />
+
+            <ImageView
+                android:id="@+id/F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_f"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/f" />
+
+            <ImageView
+                android:id="@+id/G"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_g"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/g" />
+
+            <ImageView
+                android:id="@+id/H"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_h"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/h" />
+
+            <ImageView
+                android:id="@+id/I"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_i"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/i" />
+
+            <ImageView
+                android:id="@+id/J"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_j"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/j" />
+
+            <ImageView
+                android:id="@+id/K"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_k"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/k" />
+
+            <ImageView
+                android:id="@+id/L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_l"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/l" />
+
+            <ImageView
+                android:id="@+id/M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_m"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/m" />
+
+            <ImageView
+                android:id="@+id/N"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_n"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/n" />
+
+            <ImageView
+                android:id="@+id/O"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_o"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/o" />
+
+            <ImageView
+                android:id="@+id/P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_p"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/p" />
+
+            <ImageView
+                android:id="@+id/Q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_q"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/q" />
+
+            <ImageView
+                android:id="@+id/R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_r"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/r" />
+
+            <ImageView
+                android:id="@+id/S"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_s"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/s" />
+
+            <ImageView
+                android:id="@+id/T"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_t"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/t" />
+
+            <ImageView
+                android:id="@+id/U"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_u"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/u" />
+
+            <ImageView
+                android:id="@+id/V"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_v"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/v" />
+
+            <ImageView
+                android:id="@+id/W"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_w"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/w" />
+
+            <ImageView
+                android:id="@+id/X"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_x"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/x" />
+
+            <ImageView
+                android:id="@+id/Y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_y"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/y" />
+
+            <ImageView
+                android:id="@+id/Z"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_z"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/z" />
+
+            <ImageView
+                android:id="@+id/BLANK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/B_blank"
+                android:onClick="BankTileClick"
+                android:padding="3dp"
+                android:src="@drawable/tile" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/rtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bank"
+        android:background="@drawable/whiteback"
+        android:text="@string/rtext" 
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/vtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rtext"
+        android:layout_below="@+id/bank"
+        android:background="@drawable/whiteback"
+        android:text="@string/vtext" 
+        android:textSize="12sp"/>
+
+    <GridLayout
+        android:id="@+id/board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/scrabble_board"
+        android:columnCount="15"
+        android:rowCount="15" >
+    </GridLayout>
+
+    <Button
+        android:id="@+id/bdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bank"
+        android:layout_alignBottom="@+id/rtext"
+        android:background="@drawable/delete_tile"
+        android:text="@string/delete" 
+        android:textSize="12sp"/>
+
 </RelativeLayout>

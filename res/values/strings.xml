@@ -6,5 +6,66 @@
     <string name="new_game">New</string>
     <string name="save">Save</string>
     <string name="load">Load</string>
+    <string name="delete">Delete Tile</string>
+    <string name="rtext">Remaining: </string>
+    <string name="vtext">Value: </string>
+    <string name="B_a">A</string>
+    <string name="B_b">B</string>
+    <string name="B_c">C</string>
+    <string name="B_d">D</string>
+    <string name="B_e">E</string>
+    <string name="B_f">F</string>
+    <string name="B_g">G</string>
+    <string name="B_h">H</string>
+    <string name="B_i">I</string>
+    <string name="B_j">J</string>
+    <string name="B_k">K</string>
+    <string name="B_l">L</string>
+    <string name="B_m">M</string>
+    <string name="B_n">N</string>
+    <string name="B_o">O</string>
+    <string name="B_p">P</string>
+    <string name="B_q">Q</string>
+    <string name="B_r">R</string>
+    <string name="B_s">S</string>
+    <string name="B_t">T</string>
+    <string name="B_u">U</string>
+    <string name="B_v">V</string>
+    <string name="B_w">W</string>
+    <string name="B_x">X</string>
+    <string name="B_y">Y</string>
+    <string name="B_z">Z</string>
+    <string name="B_blank">BLANK</string>
+    <string-array name="tiledraws">
+        <item>R.drawable.a</item>
+        <item>R.drawable.b</item>
+        <item>R.drawable.c</item>
+        <item>R.drawable.d</item>
+        <item>R.drawable.e</item>
+        <item>R.drawable.f</item>
+        <item>R.drawable.g</item>
+        <item>R.drawable.h</item>
+        <item>R.drawable.i</item>
+        <item>R.drawable.j</item>
+        <item>R.drawable.k</item>
+        <item>R.drawable.l</item>
+        <item>R.drawable.m</item>
+        <item>R.drawable.n</item>
+        <item>R.drawable.o</item>
+        <item>R.drawable.p</item>
+        <item>R.drawable.q</item>
+        <item>R.drawable.r</item>
+        <item>R.drawable.s</item>
+        <item>R.drawable.t</item>
+        <item>R.drawable.u</item>
+        <item>R.drawable.v</item>
+        <item>R.drawable.w</item>
+        <item>R.drawable.x</item>
+        <item>R.drawable.y</item>
+        <item>R.drawable.z</item>
+        <item>R.drawable.tile</item>
+        
+    </string-array>
+    
 
 </resources>
